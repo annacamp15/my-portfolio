@@ -38,7 +38,7 @@ export default function Contact() {
               Let's work together
             </h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm always interested in new opportunities and exciting projects. 
+              I&apos;m always interested in new opportunities and exciting projects. 
               Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
             {/* Email */}

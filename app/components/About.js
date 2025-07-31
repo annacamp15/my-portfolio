@@ -37,7 +37,7 @@ export default function About() {
           
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed" >
-             I’m a developer with a passion for building things that matter — clean interfaces, smart systems, and everything in between.
+             I&apos;m a developer with a passion for building things that matter — clean interfaces, smart systems, and everything in between.
             From front-end finesse to back-end logic, I love bringing ideas to life.
             </p>
             
