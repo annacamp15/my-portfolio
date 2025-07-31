@@ -52,7 +52,7 @@ export default function About() {
               </div>
               <div className="bg-card p-4 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Projects</h3>
-                <p className="text-muted-foreground">3+ Completed</p>
+                <p className="text-muted-foreground">3+ Ongoing</p>
               </div>
             </div>
           </div>
