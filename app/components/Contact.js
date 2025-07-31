@@ -35,11 +35,11 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">
-              Let's work together
+              Let&apos;s work together
             </h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               I&apos;m always interested in new opportunities and exciting projects. 
-              Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
             </p>
             {/* Email */}
             <div className="space-y-6">
