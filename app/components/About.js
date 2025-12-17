@@ -37,12 +37,13 @@ export default function About() {
           
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed" >
-             I&apos;m a developer with a passion for building things that matter — clean interfaces, smart systems, and everything in between.
-            From front-end finesse to back-end logic, I love bringing ideas to life.
+             I&apos;m a developer with a passion for building things that matter — 
+             <p className='font-semibold italic'> clean interfaces, smart systems, and everything in between.</p>
+            From front-end to back-end logic, I love bringing ideas to life.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-             In my downtime, I switch between designing smooth UI flows, building full stack prototypes, and training AI models that (sometimes) work. I thrive on projects that let me bring together code, data, and imagination.
+             In my free time, I either switch between designing smooth UI flows, building full stack prototypes, and training AI models that (sometimes) work. I thrive on projects that let me bring together code, data, and imagination.
             </p>
             
             <div className="grid grid-cols-2 gap-4 pt-6">

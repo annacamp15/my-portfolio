@@ -8,14 +8,36 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-    alert('Message sent successfully!');
+    setLoading(true);
+    setStatus('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setFormData({ name: '', email: '', message: '' });
+        setStatus('Message sent successfully! I&apos;ll get back to you soon.');
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus(data.error || 'Failed to send message. Please try again.');
+      }
+    } catch (err) {
+      console.error('Error:', err);
+      setStatus('Error sending message. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -166,12 +188,33 @@ export default function Contact() {
                   placeholder="Your message..."
                 />
               </div>
+
+              {status && (
+                <div className={`p-3 rounded-lg text-sm ${
+                  status.includes('successfully') 
+                    ? 'bg-green-500/10 text-green-600 dark:text-green-400' 
+                    : 'bg-red-500/10 text-red-600 dark:text-red-400'
+                }`}>
+                  {status}
+                </div>
+              )}
               
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                disabled={loading}
+                className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
-                Send Message
+                {loading ? (
+                  <>
+                    <svg className="animate-spin h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}
               </button>
             </form>
           </div>
