@@ -53,22 +53,6 @@ export default function Projects() {
       details: "#",
       githubUrl: "#"
     },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts and interactive maps.",
-      image: "/api/placeholder/400/250",
-      tags: ["React", "OpenWeather API", "Chart.js", "CSS"],
-      details: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Chat Application",
-      description: "Real-time chat application with rooms, file sharing, and emoji reactions.",
-      image: "/api/placeholder/400/250",
-      tags: ["React", "Node.js", "Socket.io", "Express"],
-      details: "#",
-      githubUrl: "#"
-    }
   ];
 
   return (
