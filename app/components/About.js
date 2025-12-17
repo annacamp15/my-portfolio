@@ -38,7 +38,7 @@ export default function About() {
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed" >
              I&apos;m a developer with a passion for building things that matter — 
-             <p className='font-semibold italic'> clean interfaces, smart systems, and everything in between.</p>
+             <span className='font-semibold italic'> clean interfaces, smart systems, and everything in between.</span>
             From front-end to back-end logic, I love bringing ideas to life.
             </p>
             
