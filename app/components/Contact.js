@@ -30,11 +30,11 @@ export default function Contact() {
         setStatus('Message sent successfully! I&apos;ll get back to you soon.');
         setTimeout(() => setStatus(''), 5000);
       } else {
-        setStatus(data.error || 'Failed to send message. Please try again.');
+        setStatus(data.error || 'Failed to send message. Please try again. Or you can email me directly at annadagosu@gmail.com.');
       }
     } catch (err) {
       console.error('Error:', err);
-      setStatus('Error sending message. Please try again later.');
+      setStatus('Error sending message. Please try again later. Or you can email me directly at annadagosu@gmail.com.');
     } finally {
       setLoading(false);
     }
