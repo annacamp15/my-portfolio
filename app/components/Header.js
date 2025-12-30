@@ -38,6 +38,12 @@ export default function Header() {
             Skills
           </button>
           <button
+            onClick={() => scrollToSection('certificates')}
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Certificates
+          </button>
+          <button
             onClick={() => scrollToSection('contact')}
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
