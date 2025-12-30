@@ -1,0 +1,1 @@
+- issue with email copy button . comment it for now

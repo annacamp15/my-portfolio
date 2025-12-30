@@ -10,11 +10,11 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl md:text-xl text-muted-foreground mb-8 leading-relaxed">
-           Computer Science Undergraduate | Full Stack Web Developer | AI and Data Science Trainee
+           Computer Science Undergraduate | IT Support |  Web Developer | AI and Data Science Trainee
           </p>
           
           <p className=" text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Currently expanding my skills in data analysis, machine learning, and backend architecture to build smarter, more impactful solutions.
+            Currently expanding my skills in IT support, data analysis, machine learning, and backend architecture to build smarter, more impactful solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -32,11 +32,10 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
           <svg
-            className="w-6 h-6 text-muted-foreground"
+            className="w-7 h-7 text-muted-foreground"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
