@@ -1,6 +1,18 @@
 export default function Skills() {
   const skillCategories = [
     {
+      title: "IT Support",
+    skills: [
+      { name: "OS Installation", level: 90 },
+      { name: "Network Configuration", level: 85 },
+      { name: "Troubleshooting", level: 95 },
+      { name: "Hardware Setup", level: 80 },
+      { name: "Software Deployment", level: 85 },
+      { name: "User Support", level: 90 }
+    ]
+      
+    },
+    {
       title: "Frontend",
       skills: [
         { name: "React", level: 60 },
@@ -9,9 +21,10 @@ export default function Skills() {
         { name: "Tailwind CSS", level: 95 },
         { name: "HTML/CSS", level: 95 }
       ]
+
     },
     {
-      title: "Backend",
+            title: "Backend",
       skills: [
         { name: "Node.js", level: 85 },
         { name: "PHP", level: 65 },
@@ -22,17 +35,17 @@ export default function Skills() {
         { name: "MongoDB", level: 80 },
         { name: "MySQL", level: 95 }
       ]
-    },
-    {
-      title: "Tools & Others",
+     
+    }
+  ];
+  skillCategories.push({
+     title: "Tools & Others",
       skills: [
         { name: "Git", level: 90 },
         { name: "Figma", level: 85 },
         { name: "VS Code", level: 95 }
       ]
-    }
-  ];
-
+  });
   return (
     <section id="skills" className="py-20 px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
