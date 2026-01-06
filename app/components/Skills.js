@@ -5,7 +5,7 @@ export default function Skills() {
       skills: [
         { name: "React", level: 60 },
         { name: "Next.js", level: 60 },
-        { name: "TypeScript", level: 10 },
+        { name: "TypeScript", level: 80 },
         { name: "Tailwind CSS", level: 95 },
         { name: "HTML/CSS", level: 95 }
       ]
@@ -15,10 +15,12 @@ export default function Skills() {
       skills: [
         { name: "Node.js", level: 85 },
         { name: "PHP", level: 65 },
-        { name: "Python", level: 80 },
+        { name: "Python", level: 90 },
         { name: "Java", level: 75 },
         { name: "C#", level: 70 },
-        { name: "REST APIs", level: 90 }
+        { name: "REST APIs", level: 90 },
+        { name: "MongoDB", level: 80 },
+        { name: "MySQL", level: 95 }
       ]
     },
     {
