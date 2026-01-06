@@ -32,7 +32,7 @@ export const majorProjects = [
     description: "Retail Knowledge-Oriented System. Modern retail management solution for inventory, sales, and operations.",
     fullDescription: `A modern, all-in-one retail management solution built with Next.js to streamline your store operations. From inventory management to sales tracking, RetailKOSys has got you covered.
   `,
-    image: "",
+    image: null,
     tags: ["TypeScript", "Next.js", "MongoDB", "HTML/CSS"],
     category: "major",
     liveUrl: null,
@@ -96,7 +96,7 @@ Key capabilities:
     title: "PipFolio - Trade Journal Web App",
     description: "A web app to track and manage multi-level trading challenges with advanced analytics and import/export capabilities.",
     fullDescription: `Trading Challenge Tracker is a specialized web application designed for traders to manage and monitor multi-level trading challenges. The platform enables users to create and organize challenge plans, log trades, visualize performance statistics, and track equity curves. CSV import/export functionality allows seamless data migration and analysis.`,
-    image: "",
+    image: "/assets/projects/pipfolio/icon.jpg",
     tags: ["TypeScript", "Next.js", "MongoDB", "Tailwind CSS"],
     category: "major",
     liveUrl: null,
@@ -111,7 +111,13 @@ Key capabilities:
       "Equity curve visualization",
       "CSV import/export"
     ],
-    screenshots: []
+    screenshots: [
+      { src: "/assets/projects/pipfolio/dashboard.png", caption: "Dashboard Overview" },
+      { src: "/assets/projects/pipfolio/challenge_dashboard.png", caption: "Challenge Dashboard" },
+      { src: "/assets/projects/pipfolio/tradelog.png", caption: "Trade Logging" },
+      { src: "/assets/projects/pipfolio/chall_overview.png", caption: "Challenge Overview" },
+      { src: "/assets/projects/pipfolio/level.png", caption: "Manage Levels" },
+    ]
   },
   {
     slug: "facial-image-verification",
@@ -131,7 +137,7 @@ Classification Categories:
 • Tampered - Manually edited or Photoshopped facial images
 
 This decision-support approach provides reliable verification results to help identify synthetic and manipulated media.`,
-    image: "",
+    image: null,
     tags: ["Python", "TensorFlow", "CNN", "Vision Transformer", "Deep Learning"],
     category: "major",
     liveUrl: null,
@@ -154,7 +160,7 @@ export const smallProjects = [
     title: "Piano Chord Library",
     description: "An interactive web application for learning and exploring piano chords with visual representations.",
     fullDescription: `A comprehensive piano chord library that helps musicians learn and practice chords. Features visual keyboard representations, audio playback, and chord progression suggestions.`,
-    image: "",
+    image: null,
     tags: ["Next.js", "Node.js", "HTML/CSS", "JavaScript"],
     category: "small",
     liveUrl: "#",
