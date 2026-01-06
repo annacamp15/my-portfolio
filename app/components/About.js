@@ -28,7 +28,7 @@ export default function About() {
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 rounded-full flex items-center justify-center">
-                    <span className="text-6xl">👨‍💻</span>
+                    <span className="text-6xl"></span>
                   </div>
                 )}
               </div>
