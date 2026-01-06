@@ -38,8 +38,8 @@ export default function About() {
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed" >
              I&apos;m a developer with a passion for building things that matter — 
-             <span className='font-semibold italic'> clean interfaces, smart systems, and everything in between.</span>
-            From front-end to back-end logic, I love bringing ideas to life.
+             <span className='font-semibold italic'> clean interfaces and smart systems.</span>
+            Projects that can improve efficiency and public services
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -53,7 +53,7 @@ export default function About() {
               </div>
               <div className="bg-card p-4 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Projects</h3>
-                <p className="text-muted-foreground">3+ Ongoing</p>
+                <p className="text-muted-foreground">6 Ongoing</p>
               </div>
             </div>
           </div>
