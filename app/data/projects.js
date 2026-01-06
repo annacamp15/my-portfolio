@@ -1,4 +1,4 @@
-// Centralized project data - edit this file to add/update projects
+// Centralized project data 
 export const majorProjects = [
   {
     slug: "nu-queuest",
@@ -22,6 +22,40 @@ export const majorProjects = [
     screenshots: [
       { src: "/assets/projects/nu-queuest_ss1.png", caption: "Mobile View Login Page" },
       { src: "/assets/projects/nu-queuest_ss2.png", caption: "User Queue Dashboard" },
+      { src: "/assets/projects/nu-queuest_ss3.png", caption: "Join Queue" },
+      { src: "/assets/projects/nu-queuest_ss4.png", caption: "Select an Office" },
+    ]
+  },
+  {
+    slug: "retailkosys",
+    title: "RetailKOSys ",
+    description: "Retail Knowledge-Oriented System. Modern retail management solution for inventory, sales, and operations.",
+    fullDescription: `A modern, all-in-one retail management solution built with Next.js to streamline your store operations. From inventory management to sales tracking, RetailKOSys has got you covered.
+  `,
+    image: "",
+    tags: ["TypeScript", "Next.js", "MongoDB", "HTML/CSS"],
+    category: "major",
+    liveUrl: null,
+    githubUrl: null,
+    date: "2025",
+    role: " Full-Stack Developer ",
+    features: [
+      "Inventory Management ",
+      "Sales Tracking",
+      "User-Friendly Interface",
+      "Responsive Design",
+    ],
+    screenshots: [
+      { src: "/assets/projects/RKO_dashboard.png", caption: "Dashboard" },
+      { src: "/assets/projects/RKO_menu.png", caption: "Menu Management" },
+      { src: "/assets/projects/RKO_POS.png", caption: "Point of Sale" },
+      { src: "/assets/projects/RKO_process_payment.png", caption: "Process Payment" },
+      { src: "/assets/projects/RKO_inventory.png", caption: "Inventory Management" },
+      { src: "/assets/projects/RKO_customer.png", caption: "Customer Management" },
+      { src: "/assets/projects/RKO_employee.png", caption: "Employee Management" },
+      { src: "/assets/projects/RKO_sales.png", caption: "Sales & Report" },
+      { src: "/assets/projects/RKO_settings.png", caption: "Settings" },
+
     ]
   },
   {
@@ -58,29 +92,24 @@ Key capabilities:
     screenshots: []
   },
   {
-    slug: "retail-management-system",
-    title: "Retail Management System",
-    description: "A comprehensive solution for managing retail operations, including inventory, sales, and customer management.",
-    fullDescription: `A full-featured retail management system that handles all aspects of retail operations. From inventory tracking to sales processing and customer relationship management, this system provides a complete solution for retail businesses.
-
-Core modules include:
-• Point of Sale (POS)
-• Inventory Management
-• Customer Management
-• Sales Reporting
-• Employee Management`,
+    slug: "pipfolio",
+    title: "PipFolio - Trade Journal Web App",
+    description: "A web app to track and manage multi-level trading challenges with advanced analytics and import/export capabilities.",
+    fullDescription: `Trading Challenge Tracker is a specialized web application designed for traders to manage and monitor multi-level trading challenges. The platform enables users to create and organize challenge plans, log trades, visualize performance statistics, and track equity curves. CSV import/export functionality allows seamless data migration and analysis.`,
     image: "",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+    tags: ["TypeScript", "Next.js", "MongoDB", "Tailwind CSS"],
     category: "major",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: null,
+    githubUrl: null,
     date: "2024",
-    role: "Full Stack Developer",
+    role: "Lead Full Stack Developer",
     features: [
-      "Point of Sale system",
-      "Inventory tracking",
-      "Sales analytics",
-      "Customer management"
+      "Challenge management",
+      "Multi-level challenge plans",
+      "Trade logging",
+      "Performance statistics",
+      "Equity curve visualization",
+      "CSV import/export"
     ],
     screenshots: []
   },
@@ -121,12 +150,12 @@ This decision-support approach provides reliable verification results to help id
 
 export const smallProjects = [
   {
-    slug: "piano-chord-catalog",
-    title: "Piano Chord Catalog",
+    slug: "piano-chord-library",
+    title: "Piano Chord Library",
     description: "An interactive web application for learning and exploring piano chords with visual representations.",
-    fullDescription: `A comprehensive piano chord catalog that helps musicians learn and practice chords. Features visual keyboard representations, audio playback, and chord progression suggestions.`,
+    fullDescription: `A comprehensive piano chord library that helps musicians learn and practice chords. Features visual keyboard representations, audio playback, and chord progression suggestions.`,
     image: "",
-    tags: ["Next.js", "Node.js", "PostgreSQL"],
+    tags: ["Next.js", "Node.js", "HTML/CSS", "JavaScript"],
     category: "small",
     liveUrl: "#",
     githubUrl: "#",
@@ -135,35 +164,13 @@ export const smallProjects = [
     challenges: "Creating an intuitive visual representation of piano keys and chords.",
     solution: "Built a custom SVG-based piano component with interactive keys.",
     features: [
-      "Interactive piano keyboard",
+      "Interactive piano keyboard - upcoming",
       "Chord library",
-      "Audio playback",
+      "Audio playback - upcoming",
       "Chord progressions"
     ],
     screenshots: []
   },
-  {
-    slug: "book-collection",
-    title: "Book Collection Web App",
-    description: "A web application for managing and showcasing a personal book collection.",
-    fullDescription: `A personal book collection manager that allows users to catalog their books, track reading progress, and share their collection. Features include book search, reviews, and reading statistics.`,
-    image: "",
-    tags: ["Laravel", "HTML/CSS", "MySQL"],
-    category: "small",
-    liveUrl: "#",
-    githubUrl: "#",
-    date: "2024",
-    role: "Full Stack Developer",
-    challenges: "Implementing a robust search and filtering system for large book collections.",
-    solution: "Used Laravel's Eloquent ORM with efficient database indexing.",
-    features: [
-      "Book cataloging",
-      "Reading tracker",
-      "Search & filter",
-      "Reading statistics"
-    ],
-    screenshots: []
-  }
 ];
 
 export const allProjects = [...majorProjects, ...smallProjects];
