@@ -63,7 +63,7 @@ export default function ScreenshotGallery({ screenshots, projectTitle }) {
                     src={getImageSrc(screenshot)}
                     alt={getImageCaption(screenshot) || `${projectTitle} screenshot ${index + 1}`}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover"
                   />
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
