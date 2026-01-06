@@ -15,7 +15,7 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-bold text-foreground">
           Portfolio
-          <div className="text-sm italic font-extralight"> still in works* </div>
+          <div className="text-sm italic font-extralight">  the works* </div>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
