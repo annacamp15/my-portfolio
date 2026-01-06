@@ -38,13 +38,13 @@ export default function About() {
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed" >
              I&apos;m a developer with a passion for building things that matter — 
-             <span className='font-semibold italic'> clean interfaces and smart systems.</span>
-            Projects that can improve efficiency and public services
+             <span className='font-semibold italic'> clean interfaces and smart systems. </span>
+            Projects that can improve efficiency and public services that can make people&apos;s lives easier excite me the most.
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
-             In my free time, I either switch between designing smooth UI flows, building full stack prototypes, and training AI models that (sometimes) work. I thrive on projects that let me bring together code, data, and imagination.
-            </p>
+            {/* <p className="text-lg text-muted-foreground leading-relaxed">
+             In my free time, I either switch between designing smooth UI flows, building full stack prototypes, and training AI models that (sometimes) work 😅.
+            </p> */}
             
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="bg-card p-4 rounded-lg border border-border">
